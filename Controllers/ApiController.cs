@@ -21,7 +21,7 @@ namespace Medals_API.Controllers
         {
             return _dataContext.Countries;
         }
-       [HttpGet("{id}"), SwaggerOperation(summary: "return a country with a user-defined id", null)
+       [HttpGet("{id}"), SwaggerOperation(summary: "return a country with a user-defined id", null)]
         public Country Get(int id)
         {
             return _dataContext.Countries.Find(id);

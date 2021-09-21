@@ -38,6 +38,7 @@ namespace MedalsAPI
                     Description = "Olympic Medals API that allows users to edit, add and delete using postman",
                  });
                 c.TagActionsBy(api => new[] { api.HttpMethod });
+               c.EnableAnnotations();
             });
         }
 
